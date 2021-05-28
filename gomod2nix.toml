@@ -1,0 +1,15 @@
+["github.com/google/uuid"]
+  sumVersion = "v1.0.0"
+  ["github.com/google/uuid".fetch]
+    type = "git"
+    url = "https://github.com/google/uuid"
+    rev = "d460ce9f8df2e77fb1ba55ca87fafed96c607494"
+    sha256 = "1922bjrnx66692dm0rrc1ckmznsaqx920ww4jzsds3xzrwf15mqv"
+
+["github.com/pborman/uuid"]
+  sumVersion = "v1.2.1"
+  ["github.com/pborman/uuid".fetch]
+    type = "git"
+    url = "https://github.com/pborman/uuid"
+    rev = "5b6091a6a160ee5ce12917b21ab96acec2a4fdc0"
+    sha256 = "0n1ng6396zgm1iggzp43h554wwp32iwr62qqfy0zl4jnk2dg41lv"
