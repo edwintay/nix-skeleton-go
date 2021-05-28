@@ -9,11 +9,13 @@ let
       gomod2nixOverlay
     ];
   };
+  gitignorePkg = import sources."gitignore.nix" { inherit (pkgs) lib; };
+  inherit (gitignorePkg) gitignoreSource;
 in
 
 pkgs.buildGoApplication {
   pname = "nix-skeleton-go";
   version = "0.0.1";
-  src = ./.;
+  src = gitignoreSource ./.;
   modules = ./gomod2nix.toml;
 }
